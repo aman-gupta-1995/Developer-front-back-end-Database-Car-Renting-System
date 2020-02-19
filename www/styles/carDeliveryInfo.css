@@ -1,0 +1,24 @@
+#deliveryPlace-select {
+  max-width: 60%;
+}
+
+#km-label {
+  display: inline;
+  vertical-align: middle;
+}
+
+#km-input {
+  margin: 0px;
+  width: 50px;
+  display: inline;
+  border-bottom: solid gray 1px;
+
+}
+
+#km-input-wrapper {
+  float: right;
+}
+
+#subheader{
+	font-weight: bold;
+}

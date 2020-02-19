@@ -1,0 +1,11 @@
+#login {
+  display: flex;
+  justify-content: center;
+}
+
+.budget-logo {
+  width: 60%;
+  margin: 0 auto;
+  display: table;
+  margin-top: 5%;
+}

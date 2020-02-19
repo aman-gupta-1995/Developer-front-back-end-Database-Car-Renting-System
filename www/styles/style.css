@@ -1,0 +1,50 @@
+.background-car {
+  background-color: #E9A042;
+  height: 100%;
+  overflow-y: auto
+}
+
+.button-mva-input {
+  border: solid 1px grey !important;
+}
+
+.budget-blue-button {
+  background-color: #1C2D5D !important;
+}
+
+.body-wrapper {
+  margin-top: 3em;
+  background-color: rgb(231, 160, 65);
+  padding-bottom: 160px;
+  padding-top: 20px;
+  overflow: auto;
+  height: 100%;
+}
+
+.checkboxes-wrapper {
+  margin: 0 auto;
+  display: table;
+  color: white;
+}
+
+.button-container {
+  height: 5em !important;
+  background-color: white !important;
+  position: relative;
+}
+
+.tab-container {
+  width: 100%;
+}
+
+.content-wrapper {
+  margin: 10px 10px !important
+}
+
+.margin-left {
+  margin-left: 5px;
+}
+
+.margin-right {
+  margin-right: 5px;
+}

@@ -1,0 +1,50 @@
+<ion-view view-title="Información del vehículo">
+  <div ng-if="vm.isLoaded">
+    <div class="bar bar-subheader" id="subheader">
+      <h2 class="title"> {{ vm.getRevisionType() }} </h2>
+    </div>
+    <ion-content class="has-header has-subheader padding">
+      <a class="item item-icon-left" >
+        <i class="icon ion-model-s"></i>
+        Modelo
+        <span class="item-note">
+          {{vm.carInfoService.carInfo.model}}
+        </span>
+      </a>
+      <a class="item item-icon-left">
+        <i class="icon ion-information-circled"></i>
+        MVA
+        <span class="item-note">
+          {{vm.carInfoService.carInfo.MVA}}
+        </span>
+      </a>
+      <a class="item item-icon-left">
+        <i class="icon ion-android-car"></i>
+        Placa
+        <span class="item-note">
+          {{vm.carInfoService.carInfo.license_plate}}
+        </span>
+      </a>
+      <a class="item item-icon-left">
+        <i class="icon ion-key"></i>
+        Llave
+        <span class="item-note">
+          {{vm.carInfoService.carInfo.key}}
+        </span>
+      </a>
+      <div class="tabs button-container row">
+        <div class="col">
+          <button class="budget-blue-button button button-block button-assertive" type="submit" ng-click="vm.goBack()"> Volver </button>
+        </div>
+        <div class="col">
+          <button class="button button-block button-positive" type="submit" ng-click="vm.goToCarView()"> Continuar </button>
+        </div>
+      </div>
+    </ion-content>
+  </div>
+</ion-view>
+<ion-view ng-if="!vm.isLoaded">
+  <ion-content>
+    <ion-spinner class="car-info-spinner" icon="ripple"></ion-spinner>
+  </ion-content>
+</ion-view>
